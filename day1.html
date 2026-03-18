@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .image {
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+      }
+      .intro {
+        height: 400px;
+        width: 100%;
+        background-color: cornsilk;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 font-['Plus_Jakarta_Sans']">
+    <nav
+      class="flex flex-wrap justify-between items-center p-4 md:px-12 bg-blue-200 sticky top-0 z-50"
+    >
+      <h1 class="text-2xl font-bold">Portfolio</h1>
+      <div class="flex items-center space-x-4 md:space-x-8 mt-2 md:mt-0">
+        <a
+          href="#"
+          class="hover:text-blue-600 font-semibold text-sm md:text-base"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="hover:text-blue-600 font-semibold text-sm md:text-base"
+          >About</a
+        >
+        <a
+          href="#projects"
+          class="hover:text-blue-600 font-semibold text-sm md:text-base"
+          >Projects</a
+        >
+        <button
+          class="bg-blue-600 text-white px-4 py-1 rounded-lg hover:bg-blue-700 transition"
+        >
+          Contact
+        </button>
+      </div>
+    </nav>
+
+    <div
+      class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 px-6 md:px-12 items-center"
+    >
+      <div class="flex justify-center">
+        <div
+          class="w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-full border-4 border-white shadow-xl"
+        >
+          <img
+            src="images/myself.jpg"
+            class="w-full h-full object-cover"
+            alt="Anil Horakeri"
+          />
+        </div>
+      </div>
+
+      <div
+        class="bg-orange-50 p-8 rounded-2xl shadow-sm border border-orange-100"
+      >
+        <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm">
+          Introduction
+        </h2>
+        
+        <h1 class="text-4xl font-extrabold mt-2 text-gray-800">
+          Anil Horakeri
+        </h1>
+        <h2>Full Stack Developer</h2>
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          Hello, I'm Anil, an aspiring Web Developer currently learning Full
+          Stack Development with Python. I enjoy building responsive and clean
+          user interfaces using modern technologies like Tailwind CSS and
+          JavaScript.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-20 px-6 md:px-12">
+      <h1 class="text-3xl font-bold border-l-4 border-blue-600 pl-4">Skills</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+        <div
+          class="bg-white shadow-md hover:shadow-xl transition-all rounded-xl p-6 text-center border-b-4 border-orange-500"
+        >
+          <i class="fa-brands fa-html5 text-5xl text-orange-500"></i>
+          <h2 class="text-xl font-bold mt-4">HTML</h2>
+          <p class="mt-2 text-sm text-gray-500">
+            Structured and semantic web pages.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md hover:shadow-xl transition-all rounded-xl p-6 text-center border-b-4 border-blue-500"
+        >
+          <i class="fa-brands fa-css3-alt text-5xl text-blue-500"></i>
+          <h2 class="text-xl font-bold mt-4">CSS & Tailwind</h2>
+          <p class="mt-2 text-sm text-gray-500">
+            Responsive designs and modern layouts.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md hover:shadow-xl transition-all rounded-xl p-6 text-center border-b-4 border-yellow-500"
+        >
+          <i class="fa-brands fa-js text-5xl text-yellow-500"></i>
+          <h2 class="text-xl font-bold mt-4">JavaScript</h2>
+          <p class="mt-2 text-sm text-gray-500">
+            Interactive and dynamic web logic.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md hover:shadow-xl transition-all rounded-xl p-6 text-center border-b-4 border-blue-400"
+        >
+          <i class="fa-brands fa-react text-5xl text-blue-400"></i>
+          <h2 class="text-xl font-bold mt-4">React JS</h2>
+          <p class="mt-2 text-sm text-gray-500">Modern component-based UIs.</p>
+        </div>
+      </div>
+    </div>
+
+    <section id="projects" class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2
+          class="text-3xl font-bold border-l-8 border-blue-600 pl-4 mb-10 text-gray-800"
+        >
+          Featured Projects
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="images/ecommerce.png"
+                alt="E-Commerce App"
+                class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase"
+              >
+                Full Stack
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">
+                E-Commerce App
+              </h3>
+              <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                A shopping platform built with **React** and **Django**.
+                Features secure user authentication and a real-time shopping
+                cart.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="bg-blue-50 text-blue-700 text-[10px] font-bold px-2 py-1 rounded-md uppercase"
+                  >React</span
+                >
+                <span
+                  class="bg-green-50 text-green-700 text-[10px] font-bold px-2 py-1 rounded-md uppercase"
+                  >Python</span
+                >
+              </div>
+              <div class="flex justify-between border-t pt-4">
+                <a
+                  href="#"
+                  class="text-blue-600 font-bold text-sm hover:text-blue-800 transition"
+                  >Live Demo &rarr;</a
+                >
+                <a href="#" class="text-gray-400 hover:text-gray-800 transition"
+                  ><i class="fa-brands fa-github text-xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="images/taskManager.webp"
+                alt="Task Tool"
+                class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase"
+              >
+                Frontend
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Task Manager</h3>
+              <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                Boost productivity with **drag-and-drop** task organization and
+                persistent local storage for your data.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="bg-yellow-50 text-yellow-700 text-[10px] font-bold px-2 py-1 rounded-md uppercase"
+                  >JavaScript</span
+                >
+                <span
+                  class="bg-purple-50 text-purple-700 text-[10px] font-bold px-2 py-1 rounded-md uppercase"
+                  >Tailwind</span
+                >
+              </div>
+              <div class="flex justify-between border-t pt-4">
+                <a
+                  href="#"
+                  class="text-blue-600 font-bold text-sm hover:text-blue-800 transition"
+                  >Live Demo &rarr;</a
+                >
+                <a href="#" class="text-gray-400 hover:text-gray-800 transition"
+                  ><i class="fa-brands fa-github text-xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="images/weatherstack-forecast.webp"
+                alt="Weather Dashboard"
+                class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase"
+              >
+                API Integration
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">
+                Weather Dashboard
+              </h3>
+              <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                Real-time weather data fetching via **OpenWeather API** with
+                interactive 5-day forecasts and dynamic icons.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="bg-blue-50 text-blue-700 text-[10px] font-bold px-2 py-1 rounded-md uppercase"
+                  >React</span
+                >
+                <span
+                  class="bg-orange-50 text-orange-700 text-[10px] font-bold px-2 py-1 rounded-md uppercase"
+                  >API</span
+                >
+              </div>
+              <div class="flex justify-between border-t pt-4">
+                <a
+                  href="#"
+                  class="text-blue-600 font-bold text-sm hover:text-blue-800 transition"
+                  >Live Demo &rarr;</a
+                >
+                <a href="#" class="text-gray-400 hover:text-gray-800 transition"
+                  ><i class="fa-brands fa-github text-xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto mt-8 px-6 md:px-12">
+      <h1 class="text-3xl font-bold border-l-4 border-blue-600 pl-4">Education & Certificates</h1>
+      <div class="grid grid-cols-2 mt-5">
+        <h1 class="text-xl font-bold">Education:BBA[Bachelor of Business Administration]</h1>
+      </div>
+    </div>
+
+
+
+    <footer class="bg-gray-800 text-white py-12 mt-10">
+      <div
+        class="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8"
+      >
+        <div>
+          <h1 class="text-2xl font-bold mb-4">Contact Me</h1>
+          <div class="space-y-2 text-gray-400">
+            <p><b class="text-white">Name:</b> Anil Horakeri</p>
+            <p><b class="text-white">Mobile:</b> +91 8530620025</p>
+            <p>
+              <b class="text-white">LinkedIn:</b>
+              <a href="#" class="hover:text-blue-400">linkedin.com/in/anil</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
